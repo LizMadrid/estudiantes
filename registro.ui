@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>763</width>
-    <height>516</height>
+    <width>790</width>
+    <height>803</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -196,7 +196,7 @@ border-radius: 5px</string>
         </widget>
        </item>
        <item alignment="Qt::AlignHCenter">
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="QPushButton" name="btn_volverR">
          <property name="minimumSize">
           <size>
            <width>50</width>
@@ -222,8 +222,8 @@ border-radius:5px</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>763</width>
-     <height>18</height>
+     <width>790</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>
