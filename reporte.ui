@@ -99,6 +99,10 @@ border-radius:10px</string>
             <property name="text">
              <string>Generar</string>
             </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>img/generar.png</normaloff>img/generar.png</iconset>
+            </property>
            </widget>
           </item>
           <item>
@@ -129,6 +133,10 @@ border-radius:10px</string>
             <property name="text">
              <string>Imprimir</string>
             </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>img/imprimir.png</normaloff>img/imprimir.png</iconset>
+            </property>
            </widget>
           </item>
           <item>
@@ -158,6 +166,10 @@ border-radius:10px</string>
             </property>
             <property name="text">
              <string>Volver</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>img/volver.png</normaloff>img/volver.png</iconset>
             </property>
            </widget>
           </item>
