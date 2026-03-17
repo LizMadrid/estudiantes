@@ -6,12 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>790</width>
-    <height>803</height>
+    <width>763</width>
+    <height>516</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-image: url(&quot;img/escuela.jpg&quot;);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
@@ -179,7 +182,7 @@ border-radius:5px
         </widget>
        </item>
        <item alignment="Qt::AlignHCenter">
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="btn_limpiar">
          <property name="minimumSize">
           <size>
            <width>50</width>
@@ -196,7 +199,7 @@ border-radius: 5px</string>
         </widget>
        </item>
        <item alignment="Qt::AlignHCenter">
-        <widget class="QPushButton" name="btn_volverR">
+        <widget class="QPushButton" name="btn_volver">
          <property name="minimumSize">
           <size>
            <width>50</width>
@@ -222,8 +225,8 @@ border-radius:5px</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>790</width>
-     <height>21</height>
+     <width>763</width>
+     <height>18</height>
     </rect>
    </property>
   </widget>

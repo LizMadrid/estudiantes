@@ -16,8 +16,23 @@ class Login(QtWidgets.QMainWindow):
         uic.loadUi("login.ui", self)
         self.controller = LoginController(self)
 
+class Lista(QtWidgets.QMainWindow):
+    volver_menu = pyqtSignal()
+    def __init__(self):
+        super().__init__()
+        uic.loadUi("lista.ui",self)
+        self.controller = ListaController(self)
+
+class Registro(QtWidgets.QMainWindow):
+    volver_menu = pyqtSignal()
+    def __init__(self):
+        super().__init__()
+        uic.loadUi("registro.ui",self)
+        self.controller = RegistroController(self)
+                    
+
 class Reporte(QtWidgets.QMainWindow):
-    volver_menu = pyqt6Signal()
+    volver_menu = pyqtSignal()
 
     def __init__(self):
         super().__init__()
@@ -31,20 +46,35 @@ class AppManager:
         self.registro = Registro()
         self.reporte = Reporte()
 
-        self.menu.open_lista.connect(self.show_lista)
-        self.menu.open_registro.connect(self.show_registro)
-        self.menu.open_reporte.connect(self.show_reporte)
+        self.login.open_lista.connect(self.show_lista)
+        self.login.open_registro.connect(self.show_registro)
+        self.login.open_reporte.connect(self.show_reporte)
 
         self.lista.volver_menu.connect(self.show_menu)
         self.registro.volver_menu.connect(self.show_menu)
         self.reporte.volver_menu.connect(self.show_menu)
 
-        self.menu.show()
+        self.login.show()
+
+    def show_lista(self):
+        self.lista.show()
+        self.login.close() 
+
+    def show_registro(self):
+        self.registro.show()
+        self.login.close()   
 
     def show_reporte(self):
         self.reporte.show()
-        self.menu.close()
+        self.login.close()  
 
-app = QApplication(sys.argv)
+    def show_menu(self):
+        self.login.show()
+        self.lista.close() 
+        self.registro.close() 
+        self.reporte.close() 
+
+
+app = QtWidgets.QApplication(sys.argv)
 manager = AppManager()
 sys.exit(app.exec())

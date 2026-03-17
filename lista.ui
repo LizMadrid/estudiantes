@@ -84,7 +84,7 @@
         </widget>
        </item>
        <item alignment="Qt::AlignHCenter">
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="btn_eliminar">
          <property name="minimumSize">
           <size>
            <width>50</width>
@@ -102,7 +102,7 @@ border-radius:5px
         </widget>
        </item>
        <item alignment="Qt::AlignHCenter">
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="btn_editar">
          <property name="minimumSize">
           <size>
            <width>50</width>
@@ -120,7 +120,7 @@ border-radius:5px
         </widget>
        </item>
        <item alignment="Qt::AlignHCenter">
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="QPushButton" name="btn_volver">
          <property name="minimumSize">
           <size>
            <width>50</width>
