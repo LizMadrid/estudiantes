@@ -14,9 +14,12 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">border-image: url(&quot;img/escuela.jpg&quot;);</string>
+   <string notr="true">.fondo{border-image: url(&quot;img/escuela.jpg&quot;);}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="class" stdset="0">
+    <string>fondo</string>
+   </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <widget class="QFrame" name="frame">
